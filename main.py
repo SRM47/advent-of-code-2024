@@ -38,8 +38,7 @@ def generate(day: int):
         if replace_option != 'y': return
         
     with open(new_solution_file, 'w') as f:
-        f.write(f"""
-from ..base import SolutionBase
+        f.write(f"""from ..base import SolutionBase
 
 class Day{day}Solution(SolutionBase):
     
