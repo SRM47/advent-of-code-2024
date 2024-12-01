@@ -8,10 +8,15 @@ class SolutionBase(ABC):
     """
 
     def __init__(self, input_file: str):
-        self.file = open(input_file, "r")
+        self.file = None
+        try:
+            self.file = open(input_file, "r")
+        except FileNotFoundError:
+            print(f"File {input_file} not found. Proceeding without...")
 
     def cleanup(self):
-        self.file.close()
+        if self.file != None:
+            self.file.close()
 
     def solver(func):
         """Decorator to process the file input"""

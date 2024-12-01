@@ -3,7 +3,7 @@ from collections import Counter
 
 
 class Day1Solution(SolutionBase):
-    def process_input(self):
+    def process_input(self) -> None:
         if hasattr(self, "_left") and hasattr(self, "_right"):
             return
         left = []
