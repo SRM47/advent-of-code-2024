@@ -24,4 +24,4 @@ class Day1Solution(SolutionBase):
     @SolutionBase.solver
     def solve_2(self):
         right_counter = Counter(self._right)
-        return sum(elem*right_counter[elem] for elem in self._left)
+        return sum(elem * right_counter[elem] for elem in self._left)
