@@ -27,6 +27,7 @@ def main():
 
     solver = solution_class(solution_file_name)
     print(f"~~Answer~~\nPart 1: {solver.solve_1()}\nPart 2: {solver.solve_2()}")
+    solver.cleanup()
 
 
 if __name__ == "__main__":
