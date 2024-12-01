@@ -21,4 +21,8 @@ class SolutionBase(ABC):
         return wrapper
 
     @abstractmethod
-    def solve(self):...
+    def solve_1(self):...
+
+    @abstractmethod
+    def solve_2(self):...
+

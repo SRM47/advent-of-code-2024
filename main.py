@@ -26,7 +26,7 @@ def main():
     solution_class = getattr(solution_module, solution_class_name)
 
     solver = solution_class(solution_file_name)
-    print("Answer: ", solver.solve())
+    print(f"~~Answer~~\nPart 1: {solver.solve_1()}\nPart 2: {solver.solve_2()}")
 
 
 if __name__ == "__main__":
